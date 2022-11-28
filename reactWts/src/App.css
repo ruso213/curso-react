@@ -4,20 +4,26 @@
   padding: 2rem;
   text-align: center;
 }
+:root{
+  --color_background : rgba(255, 255, 255, 0.541);
+  --color_no_image: rgba(255, 255, 255, 0.329);
+  --target_whith : 170px
+}
 .usuario{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 20px;
   border: 1px solid white;
   margin: 20px;
+  width: var(--target_whith) ;
   border-radius: 10px;
   cursor: pointer;
 }
 
 .usuario:hover{
   transition-duration: .3s;
-  background-color: rgba(255, 255, 255, 0.541);
+  background-color: var(--color_background);
   color: rgb(41, 41, 41);
 }
 .UsersContainer{
@@ -32,4 +38,39 @@
 
 .imgTrue{
   border-radius: 10px;
+}
+.botenes{
+  display: flex;
+  flex-direction:row;
+}
+button {
+  border-radius: 10px ;
+  border: none;
+  padding: 3px 7px ;
+  margin: 5px 10px;
+}
+.addUserContainaer{
+  margin: 0 0 0 62px;
+  border: 1px solid white;
+  display: flex;
+  height: 200px;
+  width: 188px;
+  align-items: center;
+  border-radius: 10px;
+}
+.addUserContainaer:hover{
+  background-color: var(--color_background);
+  transition-duration: .3s;
+}
+
+textarea {
+  padding: 3px 13px 0 3px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.buscador {
+  margin: 1px;
+  background-color: black;
+  color: wheat;
+  border-radius: 5px;
+  border: none;
 }

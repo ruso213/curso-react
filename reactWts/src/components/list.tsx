@@ -8,7 +8,7 @@ export function Listas() {
         setCount(users)                                       //parametros van a entrar
       }, [])
       return (
-      <div>
+      <>
           <h1>users</h1> 
           <ul className='UsersContainer'>
             {
@@ -38,9 +38,9 @@ export function Listas() {
             }
           </ul>
           <FormA onNewSub={setCount}/>  
-                                        //este set count los que hace es llamar a la funcion de 
+                                       
+      </>                            //este set count los que hace es llamar a la funcion de 
                                         //nuevo para añadir la nueva cuenta "dale click a setCount"
-      </div>
     ) 
     
   }

@@ -35,9 +35,9 @@ function List() {
   
     
     return (
-      <div>
+      <>
         <Listas/>
-      </div>
+      </>
       
   ) 
   
